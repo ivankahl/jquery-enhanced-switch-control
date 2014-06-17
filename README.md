@@ -4,7 +4,6 @@ jquery-enhanced-switch-control
 **jQuery Enhanced Switch Control** is a plugin created for the [jQuery](http://jquery.com/) Javascript library that allows you to create custom switch controls that are easy-to-use and themeable.  It separates each individual theme into its own CSS file.  The controls can be modified by the user or through Javascript code.
 
 #Getting Started
----
 ###Downloading the library
 Download the library from Github above by clicking on the **Download ZIP** button.  
 
@@ -26,7 +25,6 @@ There are several CSS files included with the library.  These files are sample t
 
 <a name="documentation"></a>
 #Documentation
----
 **jQuery Enhanced Switch Control** contains several functions that allow you to control the switch control.  All the functions can be accessed using the following syntax:
 ```javascript
 $(selectorString).enhancedSwitch('{FUNCTION NAME}');
@@ -89,9 +87,7 @@ $(".switch").enhancedSwitch("setFalse")
 ```
 
 #Contact
----
 You can email any queries or suggestions to [enhanced.switch@gmail.com](mailto:enhanced.switch@gmail.com).
 
 #Licence
----
 This work is licence under the General Public License v2.0: http://www.gnu.org/licenses/gpl-2.0-standalone.html
