@@ -1,6 +1,7 @@
 .es-switch-bg {
-    width:60px;
+    width:40px;
     height:25px;
+    border-radius: 14px;
     
     -webkit-transition: background-color 0.1s ease-in-out;
     -moz-transition: background-color 0.1s ease-in-out;
@@ -9,21 +10,24 @@
 }
 
 .es-switch-bg[data-state="false"] {
-    background-color: #1c1c1c;
+    background-color: #c91010;
 }
 
 .es-switch-bg[data-state="true"] {
-    background-color: #2e81ed;
+    background-color: #10c950;
 }
 
 .es-toggle {
-    height: 23px;
-    width: 35px;
+    height: 21px;
+    width: 21px;
     
     position: relative;
     top: 1px;
     
     background-color: #fff;
+    
+    border-radius: 12px;
+    border: #e8e8e8 1px solid;
     
     -webkit-transition: left 0.1s ease-in-out;
     -moz-transition: left 0.1s ease-in-out;
@@ -36,5 +40,5 @@
 }
 
 .es-switch-bg[data-state="true"] .es-toggle {
-    left: 24px;
+    left: 16px;
 }
