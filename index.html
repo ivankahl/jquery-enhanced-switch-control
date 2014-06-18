@@ -1,172 +1,175 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>jQuery Enhanced Switch Control by ivankahl</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>jQuery Enhanced Switch Control by ivankahl</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  </head>
-  <body>
+    </head>
+    <body>
 
-      <header>
-        <h1>jQuery Enhanced Switch Control</h1>
-        <p>A powerful, easy-to-use jQuery Switch Control</p>
-      </header>
+        <header>
+            <h1>jQuery Enhanced Switch Control</h1>
+            <p>A powerful, easy-to-use jQuery Switch Control</p>
+        </header>
 
-      <div id="banner">
-        <span id="logo"></span>
+        <div id="banner">
+            <span id="logo"></span>
 
-        <a href="https://github.com/ivankahl/jquery-enhanced-switch-control" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/ivankahl/jquery-enhanced-switch-control/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/ivankahl/jquery-enhanced-switch-control/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+            <a href="https://github.com/ivankahl/jquery-enhanced-switch-control" class="button fork"><strong>View On GitHub</strong></a>
+            <div class="downloads">
+                <span>Downloads:</span>
+                <ul>
+                    <li><a href="https://github.com/ivankahl/jquery-enhanced-switch-control/zipball/master" class="button">ZIP</a></li>
+                    <li><a href="https://github.com/ivankahl/jquery-enhanced-switch-control/tarball/master" class="button">TAR</a></li>
+                </ul>
+            </div>
+        </div><!-- end banner -->
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a name="jquery-enhanced-switch-control" class="anchor" href="#jquery-enhanced-switch-control"><span class="octicon octicon-link"></span></a>jquery-enhanced-switch-control</h1>
+        <div class="wrapper">
+            <nav>
+                <ul></ul>
+            </nav>
+            <section>
+                <p><strong>jQuery Enhanced Switch Control</strong> is a plugin created for the <a href="http://jquery.com/">jQuery</a> Javascript library that allows you to create custom switch controls that are easy-to-use and themeable.  It separates each individual theme into its own CSS file.  The controls can be modified by the user or through Javascript code.</p>
 
-<p><strong>jQuery Enhanced Switch Control</strong> is a plugin created for the <a href="http://jquery.com/">jQuery</a> Javascript library that allows you to create custom switch controls that are easy-to-use and themeable.  It separates each individual theme into its own CSS file.  The controls can be modified by the user or through Javascript code.</p>
+                <h1><a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h1>
 
-<h1>
-<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h1>
+                <h3><a name="downloading-the-library" class="anchor" href="#downloading-the-library"><span class="octicon octicon-link"></span></a>Downloading the library</h3>
 
-<h3>
-<a name="downloading-the-library" class="anchor" href="#downloading-the-library"><span class="octicon octicon-link"></span></a>Downloading the library</h3>
+                <p>Download the library from Github above by clicking on the <strong>Download ZIP</strong> button.  </p>
 
-<p>Download the library from Github above by clicking on the <strong>Download ZIP</strong> button.  </p>
+                <h3><a name="referencing-the-different-files" class="anchor" href="#referencing-the-different-files"><span class="octicon octicon-link"></span></a>Referencing the different files</h3>
 
-<h3>
-<a name="referencing-the-different-files" class="anchor" href="#referencing-the-different-files"><span class="octicon octicon-link"></span></a>Referencing the different files</h3>
+                <h4><a name="the-javascript-file" class="anchor" href="#the-javascript-file"><span class="octicon octicon-link"></span></a>The Javascript File</h4>
 
-<h4>
-<a name="the-javascript-file" class="anchor" href="#the-javascript-file"><span class="octicon octicon-link"></span></a>The Javascript File</h4>
+                <p>You will need to reference the Javascript file called <strong>jquery.enhanced-switch.js</strong> using a HTML <code>&lt;script&gt;</code> tag as shown below:</p>
 
-<p>You will need to reference the Javascript file called <strong>jquery.enhanced-switch.js</strong> using a HTML <code>&lt;script&gt;</code> tag as shown below:</p>
-
-<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"{SCRIPTS DIRECTORY}/jquery.enhanced-switch.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                <div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"{SCRIPTS DIRECTORY}/jquery.enhanced-switch.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 </pre></div>
 
-<p><code>SCRIPTS DIRECTORY</code> is the file path to the script files.</p>
+                <p><code>SCRIPTS DIRECTORY</code> is the file path to the script files.</p>
 
-<h4>
-<a name="the-css-file" class="anchor" href="#the-css-file"><span class="octicon octicon-link"></span></a>The CSS File</h4>
+                <h4><a name="the-css-file" class="anchor" href="#the-css-file"><span class="octicon octicon-link"></span></a>The CSS File</h4>
 
-<p>There are several CSS files included with the library.  These files are sample themes that you can use in your website or web app as well as to create your own themes.  Include only <strong>ONE</strong> CSS file in your HTML file using the <code>&lt;link&gt;</code> tag as shown below:</p>
+                <p>There are several CSS files included with the library.  These files are sample themes that you can use in your website or web app as well as to create your own themes.  Include only <strong>ONE</strong> CSS file in your HTML file using the <code>&lt;link&gt;</code> tag as shown below:</p>
 
-<div class="highlight highlight-html"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"jquery.enhanced-switch-{THEME NAME}.css"</span><span class="nt">/&gt;</span>
+                <div class="highlight highlight-html"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"jquery.enhanced-switch-{THEME NAME}.css"</span><span class="nt">/&gt;</span>
 </pre></div>
 
-<p><code>THEME NAME</code> is the name of the theme you want to use (e.g. apple, circle, metro etc).</p>
+                <p><code>THEME NAME</code> is the name of the theme you want to use (e.g. apple, circle, metro etc).</p>
 
-<p><a name="documentation"></a></p>
+                <p><a name="examples"></a></p>
+                
+                <h1>
+                    <a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h1>
+                
+                <p>You can view examples online that use all the different themes packaged with the plugin:</p>
+                <ul>
+                    <li><a href="example/apple.html">Apple Style</a></li>
+                    <li><a href="example/circle.html">Circle Style</a></li>
+                    <li><a href="example/metro-alt.html">Metro Alternative Style</a></li>
+                    <li><a href="example/metro.html">Metro Style</a></li>
+                    <li><a href="example/pingpong.html">PingPong Style</a></li>
+                </ul>
+                
+                <p>These examples are also packaged with the plugin in the download.</p>
+                
+                <p><a name="documentation"></a></p>
 
-<h1>
-<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h1>
+                <h1>
+                    <a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h1>
 
-<p><strong>jQuery Enhanced Switch Control</strong> contains several functions that allow you to control the switch control.  All the functions can be accessed using the following syntax:</p>
+                <p><strong>jQuery Enhanced Switch Control</strong> contains several functions that allow you to control the switch control.  All the functions can be accessed using the following syntax:</p>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="nx">selectorString</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s1">'{FUNCTION NAME}'</span><span class="p">);</span>
+                <div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="nx">selectorString</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s1">'{FUNCTION NAME}'</span><span class="p">);</span>
 </pre></div>
 
-<p><code>FUNCTION NAME</code> is the name of the function you would like to execute.  A list of all the functions with a description of what they do can be found below:</p>
+                <p><code>FUNCTION NAME</code> is the name of the function you would like to execute.  A list of all the functions with a description of what they do can be found below:</p>
 
-<h3>
-<a name="init" class="anchor" href="#init"><span class="octicon octicon-link"></span></a>init</h3>
+                <h3><a name="init" class="anchor" href="#init"><span class="octicon octicon-link"></span></a>init</h3>
 
-<p>The <code>init</code> function is used to initialise an empty <code>&lt;div&gt;</code> or multiple <code>&lt;div&gt;</code>'s.  The <code>&lt;div&gt;</code>/s need to be empty in order for the plugin to work properly.  The function can be accessed by either calling <code>.enhancedSwitch()</code> or by calling <code>.enhancedSwitch("init")</code>.</p>
+                <p>The <code>init</code> function is used to initialise an empty <code>&lt;div&gt;</code> or multiple <code>&lt;div&gt;</code>'s.  The <code>&lt;div&gt;</code>/s need to be empty in order for the plugin to work properly.  The function can be accessed by either calling <code>.enhancedSwitch()</code> or by calling <code>.enhancedSwitch("init")</code>.</p>
 
-<p>Example:</p>
+                <p>Example:</p>
 
-<p><strong>HTML</strong></p>
+                <p><strong>HTML</strong></p>
 
-<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrapper"</span><span class="nt">&gt;</span>
+                <div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"switch"</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
-<p><strong>Javascript</strong></p>
+                <p><strong>Javascript</strong></p>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                <div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">();</span>
     <span class="c1">// OR (only choose one)</span>
     <span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"init"</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></div>
 
-<h3>
-<a name="toggle" class="anchor" href="#toggle"><span class="octicon octicon-link"></span></a>toggle</h3>
+                <h3><a name="toggle" class="anchor" href="#toggle"><span class="octicon octicon-link"></span></a>toggle</h3>
 
-<p>The <code>toggle</code> function allows you to toggle the state (i.e. its checked state).  Simply call it on an Enhanced Switch object that has been initialised.  An example of how this function can be used can be found below:</p>
+                <p>The <code>toggle</code> function allows you to toggle the state (i.e. its checked state).  Simply call it on an Enhanced Switch object that has been initialised.  An example of how this function can be used can be found below:</p>
 
-<p><strong>Javascript</strong></p>
+                <p><strong>Javascript</strong></p>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"toggle"</span><span class="p">);</span>
+                <div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"toggle"</span><span class="p">);</span>
 </pre></div>
 
-<h3>
-<a name="state" class="anchor" href="#state"><span class="octicon octicon-link"></span></a>state</h3>
+                <h3><a name="state" class="anchor" href="#state"><span class="octicon octicon-link"></span></a>state</h3>
 
-<p>The <code>state</code> function returns the checked state of the Enhanced Switch object as a boolean.  If the switch is <em>on</em>, it returns <code>true</code>.  If the switch is <em>off</em>, it returns <code>false</code>.  An example can be found below:</p>
+                <p>The <code>state</code> function returns the checked state of the Enhanced Switch object as a boolean.  If the switch is <em>on</em>, it returns <code>true</code>.  If the switch is <em>off</em>, it returns <code>false</code>.  An example can be found below:</p>
 
-<p><strong>Javascript</strong></p>
+                <p><strong>Javascript</strong></p>
 
-<div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"state"</span><span class="p">);</span>
+                <div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"state"</span><span class="p">);</span>
 <span class="c1">// state will either contain TRUE if the switch is on, or FALSE if the switch is off</span>
 </pre></div>
 
-<h3>
-<a name="settrue" class="anchor" href="#settrue"><span class="octicon octicon-link"></span></a>setTrue</h3>
+                <h3><a name="settrue" class="anchor" href="#settrue"><span class="octicon octicon-link"></span></a>setTrue</h3>
 
-<p>This function sets the state of the Enhanced Switch/es to a value of <code>true</code>.  An example demonstrates its usage:</p>
+                <p>This function sets the state of the Enhanced Switch/es to a value of <code>true</code>.  An example demonstrates its usage:</p>
 
-<p><strong>Javascript</strong></p>
+                <p><strong>Javascript</strong></p>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"setTrue"</span><span class="p">);</span>
+                <div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"setTrue"</span><span class="p">);</span>
 </pre></div>
 
-<h3>
-<a name="setfalse" class="anchor" href="#setfalse"><span class="octicon octicon-link"></span></a>setFalse</h3>
+                <h3><a name="setfalse" class="anchor" href="#setfalse"><span class="octicon octicon-link"></span></a>setFalse</h3>
 
-<p>This function sets the state of the Enhanced Switch/es to a value of <code>false</code>.  An example is found below:</p>
+                <p>This function sets the state of the Enhanced Switch/es to a value of <code>false</code>.  An example is found below:</p>
 
-<p><strong>Javascript</strong></p>
+                <p><strong>Javascript</strong></p>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"setFalse"</span><span class="p">)</span>
+                <div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".switch"</span><span class="p">).</span><span class="nx">enhancedSwitch</span><span class="p">(</span><span class="s2">"setFalse"</span><span class="p">)</span>
 </pre></div>
 
-<h1>
-<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h1>
+                <h1>
+                    <a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h1>
 
-<p>You can email any queries or suggestions to <a href="mailto:enhanced.switch@gmail.com">enhanced.switch@gmail.com</a>.</p>
+                <p>You can email any queries or suggestions to <a href="mailto:enhanced.switch@gmail.com">enhanced.switch@gmail.com</a>.</p>
 
-<h1>
-<a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>Licence</h1>
+                <h1>
+                    <a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>Licence</h1>
 
-<p>This work is licence under the General Public License v2.0: <a href="http://www.gnu.org/licenses/gpl-2.0-standalone.html">http://www.gnu.org/licenses/gpl-2.0-standalone.html</a></p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/ivankahl">ivankahl</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+                <p>This work is licence under the General Public License v2.0: <a href="http://www.gnu.org/licenses/gpl-2.0-standalone.html">http://www.gnu.org/licenses/gpl-2.0-standalone.html</a></p>
+            </section>
+            <footer>
+                <p>Project maintained by <a href="https://github.com/ivankahl">ivankahl</a></p>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    </body>
 </html>
