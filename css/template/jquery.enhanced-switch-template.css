@@ -1,0 +1,60 @@
+.es-switch-bg {
+    /* Set the width and height of the switch background */
+    width: ;
+    height: ;
+    
+    /* Set the border-radius of the swtch background - for round switch, make border-radius half the height of the switch and ceil that value (i.e border-radius = math.ceil(height / 2)) */
+    border-radius: ;
+    
+    -webkit-transition: background-color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.es-switch-bg[data-state="false"] {
+    /* The colour of the switch when set to false */
+    background-color: #;
+}
+
+.es-switch-bg[data-state="true"] {
+    /* The colour of the switch when set to true */
+    background-color: #;
+}
+
+.es-toggle {
+    /* The dimensions of the switch
+       Height should be set using the following formula:
+           height = .es-switch-bg.height - 2 * top 
+       Set the width to the same value to get an equal sized switch */
+    height: ;
+    width: ;
+    
+    position: relative;
+    
+    /* Set how far the toggle should be from the top of the switch background. */
+    top: ;
+    
+    /* Set the border-radius of the switch.  Set it to 100% to get a round switch */
+    border-radius: ;
+    
+    /* Set the background color of the toggle */
+    background-color: #;
+    
+    -webkit-transition: left 0.1s ease-in-out;
+    -moz-transition: left 0.1s ease-in-out;
+    -o-transition: left 0.1s ease-in-out;
+    transition: left 0.1s ease-in-out;
+}
+
+.es-switch-bg[data-state="false"] .es-toggle {
+    /* How far the switch should be from the left side of the switch background when set to false.  This should preferably be the same as the 'top' value you set in .es-toggle */
+    left: ;
+}
+
+.es-switch-bg[data-state="true"] .es-toggle {
+    /* How far the switch should be from the left when the switch is set to true.
+       A suggested formula to use:
+           left = .es-switch-bg.width - .es-toggle.width - .es-switch-bg[data-state="false"].es-toggle.left */
+    left: ;
+}
