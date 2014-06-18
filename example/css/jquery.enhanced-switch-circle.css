@@ -1,0 +1,22 @@
+.es-switch-bg {
+    width:25px;
+    height:25px;
+    border-radius: 14px;
+    
+    -webkit-transition: background-color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.es-switch-bg[data-state="false"] {
+    background-color: #c91010;
+}
+
+.es-switch-bg[data-state="true"] {
+    background-color: #10c950;
+}
+
+.es-toggle {
+    display: none;
+}

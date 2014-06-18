@@ -1,0 +1,44 @@
+.es-switch-bg {
+    width:60px;
+    height:25px;
+    
+    -webkit-transition: background-color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+    
+    border-radius: 13px;
+}
+
+.es-switch-bg[data-state="false"] {
+    background-color: #b40000;
+}
+
+.es-switch-bg[data-state="true"] {
+    background-color: #03a02c;
+}
+
+.es-toggle {
+    height: 15px;
+    width: 15px;
+    
+    position: relative;
+    top: 5px;
+    
+    border-radius: 100%;
+    
+    background-color: #fff;
+    
+    -webkit-transition: left 0.1s ease-in-out;
+    -moz-transition: left 0.1s ease-in-out;
+    -o-transition: left 0.1s ease-in-out;
+    transition: left 0.1s ease-in-out;
+}
+
+.es-switch-bg[data-state="false"] .es-toggle {
+    left: 5px;
+}
+
+.es-switch-bg[data-state="true"] .es-toggle {
+    left: 40px;
+}
